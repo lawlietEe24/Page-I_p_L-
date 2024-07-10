@@ -1,137 +1,140 @@
-body {
-  background-color: #ccc;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  body {
+    background-color: #ccc;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
 
-.section-aside {
-  background-color: #dfe9f5;
-}
+  .section-aside {
+    background-color: #dfe9f5;
+  }
 
-.aside {
-  position: fixed;
-  height: 100vh;
-  width: 300px;
-  padding: 10px;
-  background-color:  rgb(31, 3, 105);
-  color: #fff;
-  position: fixed;
-  transition: all .4s ease;
-}
+  .aside {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(31, 3, 105);
+    color: #fff;
+    transition: all 0.4s ease;
+  }
 
-.head {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px; /* espacio entre la imagen y los iconos */
-}
+  .head {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
 
-.head i {
-  font-size: 30px;
-  cursor: pointer;
-}
+  .head i {
+    font-size: 30px;
+    cursor: pointer;
+  }
 
-.head img {
-  width: 50px;
-  border-radius: 50%;
-}
+  .head img {
+    width: 50px;
+    border-radius: 50%;
+  }
 
-.profile {
-  display: flex;
-  align-items: center;
-}
+  .profile {
+    display: flex;
+    align-items: center;
+  }
 
-.profile img {
-  margin-right: 10px;
-}
+  .profile img {
+    margin-right: 10px;
+  }
 
-.options div {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  cursor: pointer;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  font-size: 1.13rem;
-}
+  .options div {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-size: 1.13rem;
+  }
 
-.options div:hover {
-  background-color: rgba(255, 255, 255, 0.254);
-  transition: all .4s ease-in-out;
-}
+  .options div:hover {
+    background-color: rgba(255, 255, 255, 0.254);
+    transition: all 0.4s ease-in-out;
+  }
 
-.options i {
-  font-size: 1.4rem;
-  margin-right: 10px;
-}
+  .options i {
+    font-size: 1.4rem;
+    margin-right: 10px;
+  }
 
+  .aside.active {
+    width: 70px;
+    transition: all 0.4s ease;
+  }
 
+  .aside.active .option,
+  .aside.active .profile {
+    display: none;
+  }
 
+  .aside.active .head i {
+    margin: auto;
+  }
 
-/* Modificaciones al cerrar el menú */
+  .main {
+    border: 5px solid black;
+    margin-left: 300px;
+    padding: 20px;
+    transition: margin-left 0.4s ease;
+  }
 
-.aside.active {
-  width: 70px;
-  transition: all .4s ease;
-}
+  .main.shifted {
+    margin-left: 70px;
+  }
 
-.aside.active .option,
-.aside.active .profile {
-  display: none;
-}
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100vh;
+    padding-top: 20px;
+  }
 
-.aside.active .head i {
-  margin: auto;
-}
+  .box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    flex: 1 1 calc(50% - 10px);
+  }
 
-/* Cuerpo de la pagina */
-/* Título de la aplicación */
-
-
-/* General styles for main content */
-.main {
-  padding: 20px;
-  transition: margin-left 0.3s ease;
-  margin-left: 0;
-}
-
-/* Styles for when the sidebar is active */
-.main.shifted {
-  margin-left: 250px; /* Adjust this value according to your sidebar width */
-}
-
-/* Container for the boxes */
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Space between boxes */
-  border: 5px solid black;
-  height: 100vh;
-}
-
-/* General styles for all boxes */
-.box {
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-  flex: 1 1 calc(50% - 10px); /* Adjust for the gap */
-}
-
-/* Styles for the main box */
-.main-box {
-  flex: 1 1 100%; /* Main box occupies the entire width */
-}
-
-/* Styles for the secondary boxes */
-.secondary-box {
-  flex: 1 1 calc(25% - 10px); /* Four secondary boxes each occupy 25% width */
-}
+  .main-box {
+    flex: 1 1 25%;
+    height: calc(70% - 10px);
+    background-image: url('/img/Captura\ de\ pantalla\ 2024-07-10\ 125131.png'); /* Ruta de la imagen en tu computadora */
+  
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; ;
+  }
+  .secondary-box {
+    flex: 1 1 calc(25% - 10px);
+    height: calc(25% - 10px);
+  }
+  .secondary-box h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .libreria a {
+    font-size: 20px;
+    color: white;
+  }
+  .juegos a {
+    font-size: 20px;
+    color: white;
+  }
