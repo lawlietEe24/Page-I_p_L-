@@ -8,10 +8,12 @@ body{
     margin: 0;
 }
 .header{
+    align-items: center;
+    justify-content: center;
     width: 100%;
     grid-area: header;
     position: fixed;                        
-    top: 0;
+    top: 0; 
     left: 0;
     background-color: blue;
     box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
@@ -42,32 +44,42 @@ body{
 
 /* HEADER */
 
+
 .logo a{
     color: black;
+   
 }
 .icon{
-    width: 102px;
+    margin-top: 5px;
+    width: 70px;
     float: left;
-    padding-right: 3px;
+    padding-right: 0px;
     border-radius: 50%; 
 }
 .title{
     float: left;
-    margin-right: 3%;
+    margin-right: 5%;
     font-size: 35px;
+    justify-content: center;
+    align-items: center;
 }
 .menu{
-    list-style-type: none;
+    
+    margin-right: 10%; 
+
 }
+
 .links{
+    width: 5%;
     float: left;
     text-decoration: none;
     margin-right: 1%;
     padding: 0.5%;
-    color: black;
+    justify-content: center;
+    color: white;
     margin-top: 10px;
     font-size: 20px;
-    border-right: solid 1px;
+    
 }
 .links:hover{
     border: none;
@@ -76,8 +88,15 @@ body{
     transition: 0.2s;
 }
 .busqueda{
+    color: white;
+    font-size: 25px;
     display: inline-block;
     margin-left: 2%;
+   
+    padding-top: 10px ;
+    justify-content: center;
+    align-items: center;
+
 }
 .nav{
     border: none;
@@ -226,6 +245,9 @@ opacity: 0.5;
 transition: 0.5s;
 }
 .title2El{
+margin-bottom: 60px;
+
+margin-top: 40px;
 color: #eee;
 }
 
@@ -266,37 +288,37 @@ width: -20%;
 
 /* SLIDER */
 
-.slider{
-width: 95%;
-margin: auto;
-overflow: hidden;
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
 }
-.slider ul{
-display: flex;
-padding: 0;
-width: 400%;
-animation: cambio 20s infinite alternate;
-}
-.slider li{
-width: 100%;
-list-style: none;
-}
-.slider img{
-width: 100%;
-}
-@keyframes cambio{
-0% {margin-left: 0;}
-20% {margin-left: 0;}
 
-25% {margin-left: -100%;}
-45% {margin-left: -100%;}
-
-50% {margin-left: -200%;}
-70% {margin-left: -200%;}
-
-75% {margin-left: -300%;}
-100% {margin-left: -300%;}
+.slider ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 400%; /* Ajustado a 400% ya que tienes 4 imágenes */
+    animation: cambio 20s infinite; /* Eliminar alternate para hacer el bucle continuo */
 }
+
+.slider li {
+    width: 25%; /* 100% / 4 imágenes */
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: 0; } /* Vuelve al principio */
+}
+
 
 /* AUTOR */
 .imgA{
