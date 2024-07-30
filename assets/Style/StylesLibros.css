@@ -43,14 +43,14 @@ body{
     margin-left: -15%;
     
 }
-.footer{
+/* .footer{
     width: 100%;
     grid-area: footer;
     border-top: 3px solid black;
     margin-top: 2%;
     background-color: rgb(172, 139, 139);
     z-index: 6;
-}
+} */
 
 .grid{
     display: grid;
@@ -101,10 +101,10 @@ body{
     margin-top: 0.3%;
     transition: 0.2s;
 }
-.busqueda{
+/* .busqueda{
     display: inline-block;
     margin-left: 2%;
-}
+} */
 .nav{
     border: none;
     border-bottom: solid 1px black;

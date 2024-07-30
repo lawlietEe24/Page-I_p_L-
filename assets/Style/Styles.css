@@ -1,0 +1,340 @@
+body {
+  /* background: url('https://picsum.photos/2000/1200') no-repeat center center fixed; */
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header  {
+  background-color: rgba(13, 10, 22, 0.9);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+header.major1 {
+  position: relative;
+  text-align: center;
+  border-top: solid 1px #ccc;
+  top: 1em;
+  margin: 0 0 3em 0;
+}
+
+.section-aside {
+  background-color: rgba(223, 233, 245, 0.8);
+}
+
+.aside {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  padding: 10px;
+  background-color: rgba(31, 3, 105, 0.9);
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.head {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.head i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.head img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  margin-right: 10px;
+}
+
+.options div {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: 1.13rem;
+}
+
+.options div:hover {
+  background-color: rgba(255, 255, 255, 0.254);
+  transition: all 0.4s ease-in-out;
+}
+
+.options i {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+.aside.active {
+  width: 70px;
+  transition: all 0.4s ease;
+}
+
+.aside.active .option,
+.aside.active .profile {
+  display: none;
+}
+
+.aside.active .head i {
+  margin: auto;
+}
+
+.main {
+  margin-left: 300px;
+  padding: 20px;
+  transition: margin-left 0.4s ease;
+}
+
+.main.shifted {
+  margin-left: 70px;
+}
+
+.intro-section {
+  background: url('https://picsum.photos/2000/800') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: black;
+}
+
+.intro-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(249, 249, 249, 0.8);
+  flex: 1 1 calc(50% - 10px);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: black;
+}
+
+.main-box {
+  flex: 1 1 25%;
+  height: calc(70% - 10px);
+  background-image: url('https://picsum.photos/500/700');
+  text-align: center;
+}
+
+.secondary-box {
+  flex: 1 1 calc(25% - 10px);
+  height: calc(25% - 10px);
+  background-image: url('https://picsum.photos/400/600');
+}
+
+.secondary-box h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.libreria a,
+.juegos a {
+  font-size: 20px;
+  color: white;
+}
+.videos-rec a {
+  font-size: 20px;
+  color: white;
+}
+
+
+/* footer {
+  background-color: rgba(31, 3, 105, 0.9);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .social-icons li a {
+  color: white;
+  font-size: 1.5rem;
+} */
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 20px;
+  padding-bottom: 60px;
+}
+
+.custom-row .col-md-6, .custom-row .col-lg-3 {
+  max-width: calc(25% - 20px); /* Ajusta el ancho para que quepan 4 imágenes */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none; /* Elimina el borde de la tarjeta */
+  border-radius: 15px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  color: #6C63FF; /* Color del título */
+}
+
+.card-text {
+  flex: 1;
+  font-size: 1rem;
+  color: #333; /* Color del texto */
+  text-align: center; /* Centra el texto */
+}
+
+.card img {
+  width: 120px; /* Tamaño mediano de la imagen */
+  height: 120px; /* Tamaño mediano de la imagen */
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+  margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transición para el movimiento y la sombra */
+}
+
+.card img:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  color : #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-content {
+  margin-bottom: 30px;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  display: inline-block;
+}
+
+.footer-social-link {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.footer-social-link:hover {
+  color: #007bff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin-left: 70px;
+  }
+  .aside {
+    width: 70px;
+  }
+  .aside .option,
+  .aside .profile {
+    display: none;
+  }
+}
