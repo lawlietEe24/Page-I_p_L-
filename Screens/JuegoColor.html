@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Colores: Arrastra y Suelta</title>
+    <link rel="stylesheet" href="/assets/Style/StyleJuegoColor.css">
+</head>
+<body id="body">
+    <a href="JuegosInicio.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRekaSbSpz5ktNgYSWt1PBs3oBjWsUfPTWANQ&s"></a>
+    <h1>Juego de Colores</h1>
+    <div class="container">
+        <div class="color-box red" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="color-box blue" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="color-box green" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="color-box yellow" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="color-box orange" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="color-box purple" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="color-box pink" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="color-box brown" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="color-box gray" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="objects" id="objects-container"></div>
+    <div id="message" class="message"></div>
+    <button onclick="resetGame()">Reiniciar Juego</button>
+    <script src="/assets/JS/JuegoColor.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+h1 {
+    color: #ffff;
+}
+#body {
+    background-color: black;
+}
+
+#body a img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.color-box.red {
+    background-color: #ee5454;
+}
+
+.color-box.blue {
+    background-color: #5ca3f0;
+}
+
+.color-box.green {
+    background-color: #4af54a;
+}
+
+.color-box.yellow {
+    background-color: #f8f852;
+}
+
+.color-box.orange {
+    background-color: #f89334;
+}
+
+.color-box.purple {
+    background-color: #e5ccff;
+}
+
+.color-box.pink {
+    background-color: #ffccff;
+}
+
+.color-box.brown {
+    background-color: rgb(194, 83, 83);
+}
+
+.color-box.gray {
+    background-color: rgb(170, 165, 165);
+}
+
+.objects {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.object {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.object.red {
+    background-color: red;
+}
+
+.object.blue {
+    background-color: blue;
+}
+
+.object.green {
+    background-color: green;
+}
+
+.object.yellow {
+    background-color: yellow;
+}
+
+.object.orange {
+    background-color: orange;
+}
+
+.object.purple {
+    background-color: purple;
+}
+
+.object.pink {
+    background-color: pink;
+}
+
+.object.brown {
+    background-color: brown;
+}
+
+.object.gray {
+    background-color: gray;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: green;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}

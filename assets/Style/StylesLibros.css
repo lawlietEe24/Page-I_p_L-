@@ -13,20 +13,20 @@ body{
     position: fixed;                        
     top: 0;
     left: 0;
-    background-color: rgb(76, 9, 233);
+    background-color: #42424f;
     box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     z-index: 10;
 }
 .aside{
     grid-area: aside;
-    background-color: rgb(60, 14, 226);
+    background-color: #42424f;
     margin-top: 90px;
     padding: 0;
     position: fixed;
     height: 100%;
     width: 15%;
-    background-color: rgba(14, 27, 214, 0.699);
+    background-color: #42424f;
     left: 0;
     z-index: 5;
     transition: 0.5s;

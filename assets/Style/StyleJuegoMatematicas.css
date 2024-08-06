@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+   
+    background-size: cover;
+    margin: 0;
+}
+
+#body a img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.question-container {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 20px;
+    margin-top: 20px;
+}

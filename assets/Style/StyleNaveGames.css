@@ -1,0 +1,26 @@
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: white;
+}
+
+header button {
+    background-color: blue;
+    color: white;
+}
+
+body {
+    background-color: black;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+canvas {
+    background: black;
+    border: solid yellow 3px;
+}

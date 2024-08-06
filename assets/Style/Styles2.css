@@ -15,7 +15,7 @@ body{
     position: fixed;                        
     top: 0; 
     left: 0;
-    background-color: blue;
+    background-color: #42424f;
     box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     z-index: 10;

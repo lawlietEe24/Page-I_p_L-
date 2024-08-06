@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Juegos</title>
+    <link rel="stylesheet" href="/assets/Style/StylesGHOME.css">
+</head>
+<body>
+    <header id="header">
+        <a href="Index.html"><h1>Selecciona tu Juego</h1></a>
+        
+        <input type="text" id="search" placeholder="Buscar juegos..." onkeyup="filterGames()">
+    </header>
+    <main>
+        <section class="game-grid" id="gameGrid">
+            <div class="game-card" data-name="colorect">
+                <img src="https://picsum.photos/200/300" alt="Juego 1">
+                <h2>COLORECT</h2>
+                <a href="/Screens/JuegoColor.html">Jugar</a>
+            </div>
+            <div class="game-card" data-name="matematico">
+                <img src="https://picsum.photos/200/300" alt="Juego 2">
+                <h2>MATEMATICO</h2>
+                <a href="/Screens/JuegoMatematicas.html">Jugar</a>
+            </div>
+            <div class="game-card" data-name="navesespaciales">
+                <img src="https://picsum.photos/200/300" alt="Juego 3">
+                <h2>NavesEspaciales</h2>
+                <a href="/Screens/JuegoNavesEspaciales.html">Jugar</a>
+            </div>
+        </section>
+    </main>
+    <script src="/assets/JS/Juegos.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Lawliet. LAS MEJORES PAGINAS WEB</p>
+    </footer>
+</body>
+</html>

@@ -1,10 +1,3 @@
-body {
-  /* background: url('https://picsum.photos/2000/1200') no-repeat center center fixed; */
-  background-size: cover;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-header  {
+header {
   background-color: rgba(13, 10, 22, 0.9);
   padding: 20px;
   text-align: center;
@@ -36,7 +29,6 @@ header nav ul li a {
   font-size: 1.2rem;
 }
 
-
 header.major1 {
   position: relative;
   text-align: center;
@@ -54,10 +46,12 @@ header.major1 {
   height: 100vh;
   width: 300px;
   padding: 10px;
-  background-color: rgba(31, 3, 105, 0.9);
+  background-color: #42424f;
   color: #fff;
   transition: all 0.4s ease;
 }
+
+
 
 .head {
   height: 50px;
@@ -99,11 +93,17 @@ header.major1 {
 .options div:hover {
   background-color: rgba(255, 255, 255, 0.254);
   transition: all 0.4s ease-in-out;
+  color: white;
 }
 
 .options i {
   font-size: 1.4rem;
   margin-right: 10px;
+  color: #fff;
+}
+
+.options span {
+  color: white;
 }
 
 .aside.active {
@@ -130,6 +130,10 @@ header.major1 {
   margin-left: 70px;
 }
 
+#intro {
+  background-color: rgba(223, 233, 245, 0.8);
+}
+
 .intro-section {
   background: url('https://picsum.photos/2000/800') no-repeat center center;
   background-size: cover;
@@ -141,6 +145,7 @@ header.major1 {
 .intro-section h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: black;
 }
 
 .intro-section p {
@@ -149,142 +154,257 @@ header.major1 {
   margin: 0 auto;
 }
 
-.box-container {
+/* Card Section */
+#card-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  padding-top: 20px;
-}
-
-.box {
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: rgba(249, 249, 249, 0.8);
-  flex: 1 1 calc(50% - 10px);
-  background-size: cover;
-  background-blend-mode: overlay;
-  color: black;
-}
-
-.main-box {
-  flex: 1 1 25%;
-  height: calc(70% - 10px);
-  background-image: url('https://picsum.photos/500/700');
-  text-align: center;
-}
-
-.secondary-box {
-  flex: 1 1 calc(25% - 10px);
-  height: calc(25% - 10px);
-  background-image: url('https://picsum.photos/400/600');
-}
-
-.secondary-box h1 {
-  text-align: center;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.libreria a,
-.juegos a {
-  font-size: 20px;
-  color: white;
-}
-.videos-rec a {
-  font-size: 20px;
-  color: white;
-}
-
-
-/* footer {
-  background-color: rgba(31, 3, 105, 0.9);
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-footer p {
-  margin-bottom: 10px;
-}
-
-footer .social-icons {
-  list-style-type: none;
-  display: flex;
+  gap: 20px;
   justify-content: center;
-  gap: 10px;
-}
-
-footer .social-icons li a {
-  color: white;
-  font-size: 1.5rem;
-} */
-
-.custom-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 10px 20px;
-  padding-bottom: 60px;
-}
-
-.custom-row .col-md-6, .custom-row .col-lg-3 {
-  max-width: calc(25% - 20px); /* Ajusta el ancho para que quepan 4 imágenes */
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center; /* Centra horizontalmente el contenido */
 }
 
 .card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none; /* Elimina el borde de la tarjeta */
-  border-radius: 15px; /* Esquinas redondeadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-}
-
-.card:hover {
-  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al hacer hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.card-title {
-  margin-bottom: 15px;
-  font-size: 1.25rem;
-  color: #6C63FF; /* Color del título */
-}
-
-.card-text {
-  flex: 1;
-  font-size: 1rem;
-  color: #333; /* Color del texto */
-  text-align: center; /* Centra el texto */
 }
 
 .card img {
-  width: 120px; /* Tamaño mediano de la imagen */
-  height: 120px; /* Tamaño mediano de la imagen */
-  border-radius: 50%; /* Hace la imagen circular */
-  object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
-  margin-bottom: 20px; /* Espacio entre la imagen y el texto */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transición para el movimiento y la sombra */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.card img:hover {
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al hacer hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+.card-body {
+  padding: 20px;
+  text-align: center;
 }
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+.animate-this {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-animate="fadeInUp"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(50% - 20px);
+  }
+
+  .info-entry {
+    flex-direction: row;
+  }
+
+  .media-wrap {
+    margin-right: 20px;
+  }
+
+  .text-part {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: calc(25% - 20px);
+  }
+
+  .info-entry {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-entry {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+/*Imagen con descripsion*/
+
+/* General Styles */
+.image-text-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.image-text-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F64B39;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #D43F31;
+}
+
+.image {
+  flex: 1;
+  max-width: 600px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image-text-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text,
+  .image {
+    max-width: 100%;
+  }
+}
+
+/*img2*/
+/* Ensuring the styles do not conflict with existing ones */
+.image-text-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.image-text-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F64B39;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #D43F31;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image-text-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image,
+  .text {
+    max-width: 100%;
+  }
+
+  .text {
+    margin-top: 20px;
+  }
+}
+
 
 .footer {
   padding: 30px 0;
   text-align: center;
-  color : #333;
+  color: #333;
 }
 
 .container {
@@ -324,15 +444,16 @@ footer .social-icons li a {
   color: #007bff;
 }
 
-
-
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .main {
     margin-left: 70px;
   }
+
   .aside {
     width: 70px;
   }
+
   .aside .option,
   .aside .profile {
     display: none;
