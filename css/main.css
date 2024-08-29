@@ -1,0 +1,13 @@
+body{
+	width:  700px;
+	margin: 0 auto;
+	text-align: center;
+}
+body header h1 {
+	color:black;
+
+}
+canvas{
+	background:#ccc;
+	border: solid black 3px;
+}
