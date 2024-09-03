@@ -6,120 +6,204 @@
     <title>Explora Videocuentos</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/Audio.css">
-
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de enlazar los estilos -->
 </head>
 <body>
 
-    
-
-<header>
-    <h1>Explora Videocuentos</h1>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Videocuentos</a>
-        <a href="#">Categorías</a>
-        <a href="#">Mi Cuenta</a>
-    </nav>
-</header>
-
-<div class="container">
-    <div class="search-bar">
-        <input type="text" placeholder="Buscar videocuentos...">
-    </div>
-    
-
-<main class="cuepo">
-    <div>
-        <div class="grid">
-            <div class="card">
-                <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
-                <div class="card-body">
-                    <h3>Título del Videocuento</h3>
-                    <p>Autor: Nombre del Autor</p>
-                    <p>Duración: 15m</p>
-                    <button>Reproducir</button>
+    <header>
+        <div>
+            <button id="menuButton" class="btn">☰ Menu</button>
+            <div id="mySidebar" class="sidebar">
+                <div class="navigation">
+                    <ul>
+                        <li class="list active">
+                            <a href="/Screens/Index.html">
+                                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                                <span class="text">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="/Screens/Biblioteca.html">
+                                <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                                <span class="text">Biblioteca</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="/Screens/JuegosInicio.html">
+                                <span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
+                                <span class="text">Juegos</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="/Screens/Recordins.html">
+                                <span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>
+                                <span class="text">Videos</span>
+                            </a>
+                        </li>
+                        <div class="indicator"></div>
+                    </ul>
                 </div>
+                <script>
+                    const list = document.querySelectorAll('.list');
+                    function activeLink(){
+                        list.forEach((item) =>
+                        item.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                    list.forEach((item) =>
+                    item.addEventListener('click', activeLink));
+                </script>
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
             </div>
-            <!-- Repetir para más videocuentos -->
-            <div class="card">
-                <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
-                <div class="card-body">
-                    <h3>Título del Videocuento</h3>
-                    <p>Autor: Nombre del Autor</p>
-                    <p>Duración: 15m</p>
-                    <button>Reproducir</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
-                <div class="card-body">
-                    <h3>Título del Videocuento</h3>
-                    <p>Autor: Nombre del Autor</p>
-                    <p>Duración: 15m</p>
-                    <button>Reproducir</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
-                <div class="card-body">
-                    <h3>Título del Videocuento</h3>
-                    <p>Autor: Nombre del Autor</p>
-                    <p>Duración: 15m</p>
-                    <button>Reproducir</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
-                <div class="card-body">
-                    <h3>Título del Videocuento</h3>
-                    <p>Autor: Nombre del Autor</p>
-                    <p>Duración: 15m</p>
-                    <button>Reproducir</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
-                <div class="card-body">
-                    <h3>Título del Videocuento</h3>
-                    <p>Autor: Nombre del Autor</p>
-                    <p>Duración: 15m</p>
-                    <button>Reproducir</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
-                <div class="card-body">
-                    <h3>Título del Videocuento</h3>
-                    <p>Autor: Nombre del Autor</p>
-                    <p>Duración: 15m</p>
-                    <button>Reproducir</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
-                <div class="card-body">
-                    <h3>Título del Videocuento</h3>
-                    <p>Autor: Nombre del Autor</p>
-                    <p>Duración: 15m</p>
-                    <button>Reproducir</button>
-                </div>
-            </div>
+            <div id="mainContent"></div>
         </div>
+    </header>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar videocuentos...">
+        </div>
+        <main class="cuerpo">
+            <div>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/200/300" alt="Miniatura del Videocuento">
+                        <div class="card-body">
+                            <h3>Título del Videocuento</h3>
+                            <p>Autor: Nombre del Autor</p>
+                            <p>Duración: 15m</p>
+                            <button>Reproducir</button>
+                        </div>
+                    </div>
+
+                    <!-- Repetir para más videocuentos -->
+                </div>
+            </div>
+        </main>
     </div>
-</main>
 
+    <footer>
+        <hr />
+        <section class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <h2 class="footer-title">ITSQMET</h2>
+                    <p class="footer-text">0999 885332</p>
+                    <p class="footer-text">info@itsqmet.edu.ec</p>
+                    <p class="footer-text">MATRIZ: Carán N3-195 y Calle B (Nueva Tola 2)</p>
+                    <p class="footer-text">SEDE SUR: Av. Mariscal Sucre y Chumunde</p>
+                    <p class="footer-text">MANABI: Manta</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
 
-
-<footer>
-    <p>Reproduciendo: <span id="now-playing">Ningún videocuento seleccionado</span></p>
-</footer>
-
+    <script src="scriptSlidem.js"></script>
 </body>
 </html>
