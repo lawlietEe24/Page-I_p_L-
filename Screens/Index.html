@@ -14,6 +14,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="section-aside">
@@ -32,7 +37,7 @@
           <div class="libreria">
             <a href="/Screens/Biblioteca.html">
               <i class="bx bxs-book bx-tada"></i>
-              <span class="option">Libreria</span>
+            <span class="option">Librería</span>
             </a>
           </div>
           <div class="juegos">
@@ -45,14 +50,21 @@
           <div class="videos-rec">
             <a href="/Screens/Recordins.html">
               <i class="bx bxs-video-recording bx-tada"></i>
-              <span class="option">Videos</span>
+              <span class="option">Videos de E. temprana</span>
             </a>
           </div>
 
           <div class="videos-rec">
             <a href="/Screens/AudioBook.html">
-              <i class='bx bx-play-circle' ></i>
-              <span class="option">Audio Cuentos</span>
+              <i class='bx bxs-book' ></i>
+              <span class="option">Cuentos</span>
+            </a>
+          </div>
+          
+          <div class="videos-rec">
+            <a href="/Screens/Reciclaje.html  ">
+              <i class='bx bxs-package'></i> 
+              <span class="option">Reciclaje</span>
             </a>
           </div>
         </div>
@@ -64,56 +76,247 @@
         <div class="intro-content">
           <h1>Educación Inicial</h1>
           <p style="text-align: center; text-decoration: solid; font-size: 35px">
-            "La educación inicial es la semilla que siembra valores,
+            <!-- "La educación inicial es la semilla que siembra valores,
             conocimientos y sueños en los corazones de los más pequeños,
-            preparando el terreno para un futuro lleno de posibilidades."
+            preparando el terreno para un futuro lleno de posibilidades." -->
           </p>
         </div>
       </section>
 
-      <section id="card-section">
-        <div class="card-container">
-          <div class="card animate-this" data-animate="fadeInUp">
-            <img src="/img/EduccaionInicialA1.jpg" alt="Card Image 1" />
-            <div class="card-body">
-              <h3 class="card-title">A. Lenguaje</h3>
-              <p class="card-text">
-                Desarrollo de habilidades de comunicación verbal y no verbal.
-              </p>
-            </div>
-          </div>
-          <div class="card animate-this" data-animate="fadeInUp">
-            <img src="/img/EducacionInicialA2.jpg" alt="Card Image 2" />
-            <div class="card-body">
-              <h3 class="card-title">A. Cognitiva</h3>
-              <p class="card-text">
-                Estimulación del pensamiento crítico y la resolución de
-                problemas.
-              </p>
-            </div>
-          </div>
-          <div class="card animate-this" data-animate="fadeInUp">
-            <img src="/img/EducacionInicialA3.jpg" alt="Card Image 3" />
-            <div class="card-body">
-              <h3 class="card-title">A. Socio Afectiva</h3>
-              <p class="card-text">
-                Fomento de relaciones saludables y manejo de emociones.
-              </p>
-            </div>
-          </div>
-          <div class="card animate-this" data-animate="fadeInUp">
-            <img src="/img/EducacionInicialA4.jpg" alt="Card Image 4" />
-            <div class="card-body">
-              <h3 class="card-title">A. Motriz</h3>
-              <p class="card-text">
-                Mejora de la coordinación y habilidades motoras finas y gruesas.
-              </p>
-            </div>
-          </div>
-        </div>  
-      </section>
+     <!-- Sección de tarjetas -->
+<section id="card-section">
+  <div class="card-container">
+    <!-- Tarjeta 1 - Lenguaje -->
+    <div class="card animate-this" data-animate="fadeInUp" data-bs-toggle="modal" data-bs-target="#modalLenguaje">
+      <img src="/img/EduccaionInicialA1.jpg" alt="Card Image 1" />
+      <div class="card-body">
+        <h3 class="card-title">A. Lenguaje</h3>
+        <p class="card-text">
+          Desarrollo de habilidades de comunicación verbal y no verbal.
+        </p>
+      </div>
+    </div>
 
-      <section class="image-text-section">
+    <!-- Tarjeta 2 - Cognitiva -->
+    <div class="card animate-this" data-animate="fadeInUp" data-bs-toggle="modal" data-bs-target="#modalCognitiva">
+      <img src="/img/EducacionInicialA2.jpg" alt="Card Image 2" />
+      <div class="card-body">
+        <h3 class="card-title">A. Cognitiva</h3>
+        <p class="card-text">
+          Estimulación del pensamiento crítico y la resolución de problemas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 - Socio Afectiva -->
+    <div class="card animate-this" data-animate="fadeInUp" data-bs-toggle="modal" data-bs-target="#modalSocioAfectiva">
+      <img src="/img/EducacionInicialA3.jpg" alt="Card Image 3" />
+      <div class="card-body">
+        <h3 class="card-title">A. Socio Afectiva</h3>
+        <p class="card-text">
+          Fomento de relaciones saludables y manejo de emociones.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 - Motriz -->
+    <div class="card animate-this" data-animate="fadeInUp" data-bs-toggle="modal" data-bs-target="#modalMotriz">
+      <img src="/img/EducacionInicialA4.jpg" alt="Card Image 4" />
+      <div class="card-body">
+        <h3 class="card-title">A. Motriz</h3>
+        <p class="card-text">
+          Mejora de la coordinación y habilidades motoras finas y gruesas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modales -->
+
+<!-- Modal 1 - Lenguaje -->
+<div class="modal fade" id="modalLenguaje" tabindex="-1" aria-labelledby="modalLenguajeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLenguajeLabel">Área de Lenguaje</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselLenguaje" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/le1.jpg" class="d-block w-100" alt="Lenguaje 1">
+              <img src="/img/le2.png" class="d-block w-100" alt="Lenguaje 1">
+              <img src="/img/le3.png" class="d-block w-100" alt="Lenguaje 1">
+              <img src="/img/le4.png" class="d-block w-100" alt="Lenguaje 1">
+              <img src="/img/le5.png" class="d-block w-100" alt="Lenguaje 1">
+              <img src="/img/le6.png" class="d-block w-100" alt="Lenguaje 1">
+              <img src="/img/le7.png" class="d-block w-100" alt="Lenguaje 1">
+              <img src="/img/le8.png" class="d-block w-100" alt="Lenguaje 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/len1.png" class="d-block w-100" alt="Lenguaje 2">
+              <img src="/img/len2.png" class="d-block w-100" alt="Lenguaje 2">
+              <img src="/img/len3.png" class="d-block w-100" alt="Lenguaje 2">
+              <img src="/img/len4.png" class="d-block w-100" alt="Lenguaje 2">
+              <img src="/img/len5.png" class="d-block w-100" alt="Lenguaje 2">
+              <img src="/img/len6.png" class="d-block w-100" alt="Lenguaje 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselLenguaje" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselLenguaje" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 - Cognitiva -->
+<div class="modal fade" id="modalCognitiva" tabindex="-1" aria-labelledby="modalCognitivaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCognitivaLabel">Área Cognitiva</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselCognitiva" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/Cog1.png" class="d-block w-100" alt="Cognitiva 1">
+              <img src="/img/Cog2.png" class="d-block w-100" alt="Cognitiva 1">
+              <img src="/img/Cog3.png" class="d-block w-100" alt="Cognitiva 1">
+              <img src="/img/Cog4.png" class="d-block w-100" alt="Cognitiva 1">
+              <img src="/img/Cog5.png" class="d-block w-100" alt="Cognitiva 1">
+              <img src="/img/Cog6.png" class="d-block w-100" alt="Cognitiva 1">
+              <img src="/img/Cog7.png" class="d-block w-100" alt="Cognitiva 1">
+              <img src="/img/Cog8.png" class="d-block w-100" alt="Cognitiva 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/cogni1.png" class="d-block w-100" alt="Cognitiva 2">
+              <img src="/img/cogni2.png" class="d-block w-100" alt="Cognitiva 2">
+              <img src="/img/cogni3.png" class="d-block w-100" alt="Cognitiva 2">
+              <img src="/img/cogni4.png" class="d-block w-100" alt="Cognitiva 2">
+              <img src="/img/cogni5.png" class="d-block w-100" alt="Cognitiva 2">
+              <img src="/img/cogni6.png" class="d-block w-100" alt="Cognitiva 2">
+              <img src="/img/cogni7.png" class="d-block w-100" alt="Cognitiva 2">
+              <img src="/img/cogni8.png" class="d-block w-100" alt="Cognitiva 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCognitiva" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCognitiva" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 - Socio Afectiva -->
+<div class="modal fade" id="modalSocioAfectiva" tabindex="-1" aria-labelledby="modalSocioAfectivaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSocioAfectivaLabel">Área Socio Afectiva</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselSocioAfectiva" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/desaI1.png" class="d-block w-100" alt="Socio Afectiva 1">
+              <img src="/img/desaI2.png" class="d-block w-100" alt="Socio Afectiva 1">
+              <img src="/img/desaI3.png" class="d-block w-100" alt="Socio Afectiva 1">
+              <img src="/img/desaI4.png" class="d-block w-100" alt="Socio Afectiva 1">
+              <img src="/img/desaI5.png" class="d-block w-100" alt="Socio Afectiva 1">
+              <img src="/img/desaI6.png" class="d-block w-100" alt="Socio Afectiva 1">
+              <img src="/img/desaI7.png" class="d-block w-100" alt="Socio Afectiva 1">
+              <img src="/img/desaI8.png" class="d-block w-100" alt="Socio Afectiva 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/sa1.png" class="d-block w-100" alt="Socio Afectiva 2">
+              <img src="/img/sa2.png" class="d-block w-100" alt="Socio Afectiva 2">
+              <img src="/img/sa3.png" class="d-block w-100" alt="Socio Afectiva 2">
+              <img src="/img/sa4.png" class="d-block w-100" alt="Socio Afectiva 2">
+              <img src="/img/sa5.png" class="d-block w-100" alt="Socio Afectiva 2">
+              <img src="/img/sa6.png" class="d-block w-100" alt="Socio Afectiva 2">
+              <img src="/img/sa7.png" class="d-block w-100" alt="Socio Afectiva 2">
+              <img src="/img/sa8.png" class="d-block w-100" alt="Socio Afectiva 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocioAfectiva" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSocioAfectiva" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 - Motriz -->
+<div class="modal fade" id="modalMotriz" tabindex="-1" aria-labelledby="modalMotrizLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalMotrizLabel">Área Motriz</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselMotriz" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/MotrizC1.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/MotrizC2.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/MotrizC3.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/MotrizC4.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/MotrizC5.png" class="d-block w-100" alt="Motriz 2">
+              
+            </div>
+            <div class="carousel-item">
+              <img src="/img/laImportanciadeldesarrollomotrix.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/laImportanciadelde2.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/laImportanciadelde.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/laImportanciadelde3.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/laImportanciadelde4.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/laImportanciadelde5.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/laImportanciadelde6.png" class="d-block w-100" alt="Motriz 2">
+              <img src="/img/laImportanciadelde7.png" class="d-block w-100" alt="Motriz 2">
+              
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMotriz" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMotriz" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <section class="image-text-section">  </section>
         <div class="container">
           <div class="image-text-content">
             <div class="text">
@@ -155,6 +358,7 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <footer>
@@ -185,6 +389,9 @@
         </div>
       </section>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../java/menu.js"></script>
   </body>
 </html>
